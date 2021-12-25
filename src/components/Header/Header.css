@@ -1,0 +1,27 @@
+.navbars{
+    color: black;
+    font-weight: 700;
+    
+}
+.links{
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    text-decoration: none;
+    color: white;
+}
+.login-button{
+    background-color: #ff7961;
+    border: none;
+}
+.login-button:hover{
+    background-color: #ff7961;
+    border: none;
+}
