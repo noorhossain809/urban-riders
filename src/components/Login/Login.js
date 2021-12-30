@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faSquare } from '@fortawesome/free-regular-svg-icons';
+import { Container } from 'react-bootstrap';
 
 
 // const BootstrapButton = styled(Button)({
@@ -57,8 +58,10 @@ import { faSquare } from '@fortawesome/free-regular-svg-icons';
   
 const Login = () => {
     return (
-        <div className='login m-5 text-center align-items-center'>
-            <h3>Login</h3>
+        <div className='login m-5'>
+          
+            <h3 style={{marginLeft:'50px',marginTop:'10px'}}>Login</h3>
+            <div className=" m-5 text-center align-items-center justify-content-center">
             <div className="login-component ">
             <Box
       component="form"
@@ -73,9 +76,8 @@ const Login = () => {
       <br />
       <TextField id="standard-basic" label="Password" variant="standard" />
       <br />
-      <TextField id="standard-basic" label="Confirm Password" variant="standard" />
       <div className="d-flex">
-          <div className="col-md-6 m-2">
+          <div className="col-md-4 m-2 ">
           <p><FontAwesomeIcon icon={faSquare} /> Remember Me</p>
           </div>
           <div className="ms-auto mt-2">
@@ -87,6 +89,8 @@ const Login = () => {
     <ColorButton sx={{ m: 1, width: "50ch" }} variant="contained"><Link to='/login' className="link"><span>L</span><span className="link text-lowercase">ogin</span></Link></ColorButton>
       <p>Don't have an account? <Link to="/create">Create an account</Link></p>
             </div>
+            </div>
+            
         </div>
     );
 };

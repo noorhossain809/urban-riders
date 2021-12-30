@@ -5,6 +5,8 @@ import Login from "./components/Login/Login";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Header from "./components/Header/Header";
 import CreateLogin from "./components/CreateLogin/CreateLogin";
+import Destination from "./components/Destination/Destination";
+import SearchDestination from "./components/SearchDestination/SearchDestination";
 
 function App() {
   return (
@@ -22,6 +24,13 @@ function App() {
           <Route path="/create">
           <CreateLogin></CreateLogin>
           </Route>
+          <Route path="/destination/research/:name">
+          <SearchDestination></SearchDestination>
+          </Route>
+          <Route path="/destination/:name">
+            <Destination></Destination>
+          </Route>
+          
           
           <Route exact path='/'>
           <Home></Home>

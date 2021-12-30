@@ -1,0 +1,15 @@
+.station-description{
+    background-color: #9c27b0;
+    border-radius: 5px;
+    
+    height: 100px;
+    margin-right: 10px;
+    
+}
+.main-description{
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 12px;
+    height: 460px;
+}

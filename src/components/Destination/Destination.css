@@ -1,0 +1,25 @@
+.main{
+    border-top: 2px solid gainsboro;
+
+}
+.pick{
+     margin-left: 22px;
+    font-weight: 500;
+    margin-top: 5px
+}
+.station-details{
+    background-color: gainsboro;
+    width: 320px;
+    padding: 10px;
+    border-radius: 8px;
+    height: 260px;
+    margin-right: 20px;
+}
+.search{
+    color: white;
+    text-decoration: none;
+}
+.search:hover{
+    color: white;
+    text-decoration: none;
+}

@@ -7,6 +7,7 @@ import Stack from '@mui/material/Stack';
 import { purple } from '@mui/material/colors';
 import MainHeader from "../MainHeader/MainHeader";
 import { Link } from "react-router-dom";
+import logo from '../../images/Urban Riders.png'
 
 const BootstrapButton = styled(Button)({
     boxShadow: 'none',
@@ -54,10 +55,10 @@ const BootstrapButton = styled(Button)({
 
 const Header = () => {
   return (
-    <div >
+    <Container >
       <Navbar collapseOnSelect expand="lg">
         <Container>
-          <h3 href="#home">Urban Riders</h3>
+          <img src={logo} alt="" style={{width:'150px'}}/>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto navbars">
@@ -73,7 +74,7 @@ const Header = () => {
         </Container>
       </Navbar>
      
-    </div>
+    </Container>
   );
 };
 
