@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Nav, Navbar, } from "react-bootstrap";
 import './Header.css'
 import { styled } from '@mui/material/styles';
@@ -8,6 +8,7 @@ import { purple } from '@mui/material/colors';
 import MainHeader from "../MainHeader/MainHeader";
 import { Link } from "react-router-dom";
 import logo from '../../images/Urban Riders.png'
+import { UserContext } from "../../App";
 
 const BootstrapButton = styled(Button)({
     boxShadow: 'none',
@@ -54,6 +55,7 @@ const BootstrapButton = styled(Button)({
   }));
 
 const Header = () => {
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext)
   return (
     <Container >
       <Navbar collapseOnSelect expand="lg">
@@ -68,7 +70,8 @@ const Header = () => {
             <Link className="links" to='/contact'>Contact</Link>
             </Nav>
             <Stack spacing={2} direction="row">
-      <ColorButton variant="contained"><Link to='/login' className="link">Login</Link></ColorButton>
+      {loggedInUser.email?<ColorButton variant="contained"><Link to='' onClick={() => setLoggedInUser({})} className="link">Sign Out</Link></ColorButton>:
+      <ColorButton variant="contained"><Link to='/login' className="link">Login</Link></ColorButton>}
     </Stack>
           </Navbar.Collapse>
         </Container>

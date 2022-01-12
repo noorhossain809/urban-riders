@@ -31,9 +31,9 @@ function App() {
           <Route path="/destination/research/:name">
             <SearchDestination></SearchDestination>
           </Route>
-          <Route path="/destination/:name">
+          <PrivateRoute path="/destination/:name">
             <Destination></Destination>
-          </Route>
+          </PrivateRoute>
           <Route exact path="/">
             <Home></Home>
           </Route>
