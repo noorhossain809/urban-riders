@@ -41,36 +41,6 @@ const MainHeader = (props) => {
           </h5></Link>
         </CardContent>
       </Card>
-      
-      
-      {/* <Card className="w-25 m-3 mt-5">
-        <CardContent className="mt-3 p-5">
-          <img src={frame1} alt="" className="w-50" />
-          <Link style={{textDecoration:'none'}} to="/destination"><h5 className="mt-4" variant="body2">
-            {name}
-          </h5></Link>
-        </CardContent>
-      </Card>
-      
-     
-     <Card className="w-25 m-3 mt-5">
-        <CardContent className="mt-3 p-5">
-          <img src={image} alt="" className="w-50" />
-          <Link style={{textDecoration:'none'}} to="/destination"><h5 className="mt-4" variant="body2">
-            {name}
-          </h5></Link>
-        </CardContent>
-      </Card>
-     
-      
-      <Card className="w-25 m-3 mt-5">
-        <CardContent className="mt-3 p-5">
-          <img src={image} alt="" className="w-50" />
-          <Link style={{textDecoration:'none'}} to="/destination"><h5 className="mt-4" variant="body2">
-            {name}
-          </h5></Link>
-        </CardContent>
-      </Card> */}
       </Container>
     </div>
   );
